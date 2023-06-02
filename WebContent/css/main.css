@@ -1,0 +1,56 @@
+#shopping-section article{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#shopping-section article h2{
+    font-size: 2em;
+}
+
+@keyframes fade-in{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100;
+    }
+}
+
+#rank{
+    font-size: 2em;
+    font-weight: bold;
+    background-color: rgb(217, 232, 221);
+    padding: 0 10px;
+}
+
+.main-best-article{
+    font-size: 20px;
+    height: 80%;
+    margin-top: 30px;
+}
+
+.main-best-article a{
+    display: inline-block;
+}
+
+.main-best-article img{
+    width: 85%;
+}
+
+.main-best-article img:hover{
+    width: 95%;
+    animation-name: focus;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+@keyframes focus{
+    0%{
+        width: 85%;
+    }
+    100%{
+        width: 95%;
+    }
+}

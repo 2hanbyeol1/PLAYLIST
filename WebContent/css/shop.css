@@ -1,0 +1,26 @@
+.title{
+    margin: 30px 0;
+    font-size: 2em;
+}
+
+.item-container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.item{
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.item img{
+    width: 300px;
+}
+
+.item img:hover{
+    box-shadow: 0px 0px 10px 3px rgb(170, 198, 178);
+}
+
+.item div:nth-child(2){
+    font-weight: bold;
+}

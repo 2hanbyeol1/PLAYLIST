@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    background-color: rgb(170, 198, 178);
+}
+
+li{
+    list-style-type: none;
+}
+
+/*
+    logo
+*/
+.logo-a:link, .logo-a:hover, .logo-a:active, .logo-a:visited, .shopping-logo-a{
+    text-decoration: none; 
+    color: white;
+}
+
+.logo-a, .shopping-logo-a{
+    color: white;
+    font-size: 2em;
+}
+
+.logo-a h1:hover, .shopping-logo-a h1:hover{
+    animation-name: wave;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+/*
+    navbar
+*/
+.shopping-nav{
+    height: 172px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shopping-nav img{
+    width: 40px;
+    height: 40px;
+    padding: 15px;
+}
+
+.shopping-nav img:hover{
+    cursor: pointer;
+    background-color: #00000022;
+    transition: 0.7s;
+}
+
+.nav-items-left{
+    position: fixed;
+    left: 20px;
+}
+
+.nav-items-right{
+    position: fixed;
+    right: 20px;
+}
+
+#navbar-left{
+    position: absolute;
+    left: -13%;
+    width: 13%;
+    height: 100%;
+    background-color: #000000cc;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-left-details{
+    position: absolute;
+    left: -13%;
+    width: 10%;
+    height: 100%;
+    background-color: #000000bb;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar-right{
+    position: absolute;
+    right: -20%;
+    width: 20%;
+    height: 100%;
+    background-color: #000000cc;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar-left ul, .navbar-left-details ul, #navbar-right ul{
+    width: 100%;
+}
+
+#navbar-left img{
+    position: absolute;
+    left: 35px;
+    top: 65px;
+    width: 40px;
+}
+
+#navbar-left img:hover{
+    cursor: pointer;
+}
+
+#navbar-left li, .navbar-left-details li, #navbar-right li{
+    text-decoration: none;
+    margin-bottom: 25px;
+    height: 100%;
+}
+
+#navbar-left li, .navbar-left-details a, #navbar-right a{
+    cursor: pointer;
+    display: inline-block;
+    width: 100%;
+    padding: 15px 0;
+    text-decoration: none;
+    color: white;
+    height: 100%;
+}
+
+#navbar-right img{
+    position: absolute;
+    right: 35px;
+    top: 65px;
+    width: 40px;
+}
+
+#navbar-right img:hover{
+    cursor: pointer;
+}
+
+/*
+    shopping - header, section
+*/
+#shopping-header{
+    width: 100%;
+    height: 172px;
+    position: fixed;
+}
+
+#shopping-section{
+    position: relative;
+    top: 172px;
+    height: calc(100% - 172px);
+    background-color: white;
+}
+
+/*
+    form - section
+*/
+.form-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes wave{
+    50%{
+        transform: translateY(-5px);
+    }
+
+    100%{
+        transform: translateY(5px);
+    }
+}
+
+.userInfo-form{
+    width: 650px;
+}
+
+.userInfo-form h2{
+    font-weight: lighter;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.userInfo-form-content{
+    margin: 10px auto;
+    width: 60%;
+}
+
+.userInfo-form-content input{
+    display: block;
+    width: 100%;
+    height: 35px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.userInfo-form-content a{
+    text-decoration: none;
+    color: black;
+}
+
+.userInfo-form-button{
+    cursor: pointer;
+    height: 35px;
+    border: 1px solid black;
+    background-color: rgb(197, 218, 203);
+}
+
+.userInfo-form-button:hover{
+    background-color: rgb(170, 198, 178);
+}
+
+.footer-content-p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: white;
+    font-size: small;
+}
+
+/*
+    scrollbar
+*/
+::-webkit-scrollbar{
+    width: 5px;
+    height: 5px;
+    background-color: white;
+}
+
+::-webkit-scrollbar-thumb{
+    width: 3px;
+    background-color: rgb(222, 96, 134);
+}

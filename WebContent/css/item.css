@@ -1,0 +1,57 @@
+.shopping-article{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.item-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.item-description-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.item-description div{
+    margin-bottom: 10px;
+}
+
+.item-name{
+    font-size: 2em;
+}
+
+.item-price{
+    font-size: 1.3em;
+}
+
+.control-button{
+    width: 100%;
+    margin-top: 30px;
+}
+
+.control-button button{
+    margin-bottom: 10px;
+    padding: 7px 0;
+    width: 100%;
+    background-color: rgb(170, 198, 178);
+    color: white;
+    font-size: 18px;
+    border: 0;
+}
+
+.control-button button:hover{
+    background-color: #93ac9a;
+    cursor: pointer;
+}
+
+.item-info{
+    margin: 30px 0;
+}
